@@ -9,9 +9,12 @@ We use these cheat codes as an example of how a supposed well crafted game like 
 To apply the hacks you have to open the developer console of your browser.
 To do that:
  - Click F12 on the everwing game page (or, right click the page and select "inspect element")
+    - This will open the developer's tools on most major browsers. From here web developers tests and debug the web aplications they create. If your browser don't have dev tools, you can use firebug (https://getfirebug.com/)
  - Click the "Console" tab if you are not already there
+    - The console tab is a javascript console. Here, we can write javascript code and run it on the active page.
  - Click the down arrow next to the "top"
  - On the drop down, sellect "index.html" (it should be on the bottom)
+    - This will set the active javascript window to the game window, so that the code we run will run on the game window and not on the messenger window.
 
 ## Hack Codes
 Now paste any of the codes bollow to hack the game.
@@ -179,3 +182,5 @@ Get 9.999 sideckick XP points
 ```javascript
 playFakeGame({sidekick_xp : 9999});
 ```
+
+There are limits on the resources you can get, for example you can't get 999.999 coins with 1 fake game.
