@@ -1,5 +1,9 @@
 # Everwing-Hacks
-Hacks for the everwing game
+Hacks for the everwing game.
+
+The security of the today systems should be strong. We as users demand that the systems we use should be secure to protect our data. For educational reasons we try to see, how easy it is to change the system's data (like in this example Everwing Game's data). When a game is so unsecure, it makes a player's ingame achivements and items useless.
+
+We use these cheat codes as an example of how a supposed well crafted game like Everwing, with fancy sprites and game modes, has no security at all. By using this cheats your account may be banned.
 
 ## Apply the hacks
 To apply the hacks you have to open the developer console of your browser.
@@ -28,6 +32,19 @@ Get a random sidekick
 ```javascript
 var types = ["smart", "common", "bronze", "silver", "gold", "magical", "legendary", "bossraid"];
 GC.app.client.runFunction("sidekickGacha", {isFree : true, gachaType : types[Math.floor(Math.random() * types.length)]});
+```
+
+Get a random event sidekick
+```javascript
+var events = GC.app.client.schemaAPI.getTable("sidekicksEvents").rows;
+var sidekickEvents = [];
+for(var i = events.length - 1; i>=0; i--){
+	if (events[i].sidekicks) sidekickEvents.push(events[i].name);
+}
+if(sidekickEvents.length > 0){
+	GC.app.client.runFunction("sidekickEventGacha", {eventID : sidekickEvents[Math.floor(Math.random() * sidekickEvents.length)]});
+}
+else{console.log("No events.");}
 ```
 
 Get a smart sidekick
