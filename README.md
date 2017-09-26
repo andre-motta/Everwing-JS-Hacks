@@ -90,6 +90,62 @@ Get a bossraid sidekick
 GC.app.client.runFunction("sidekickGacha", {isFree : true, gachaType : "bossraid"});
 ```
 
+#### Get any sidekick you want
+First paste this function
+
+```javascript
+var getSidekickById = function(id){
+	var index = -1;
+	var models = GC.app.client.schemaAPI.ledger.schemaManager.models
+	for (var i = 0; i < models.length; i++) {
+		if(models[i].name == "sidekicksEvents") index = i;
+	}
+	if(!models[index].hacked){
+		var realEvents = models[index];
+		var fakeEvents = {
+			hacked : true,
+			realEvents : realEvents,
+			id : "Table:sidekicksEvents",
+			name : "sidekicksEvents",
+			rowIDName : "name",
+			rows : [],
+			getRow : function(name){
+				for (var i = 0; i < this.rows.length; i++) {
+					if(this.rows[i].name == name) return this.rows[i];
+				}
+			}
+		};
+		fakeEvents.fakeEvent = {
+			"name":"the_hack_event",
+			"sidekicks":[{"id":"sidekick:FC00"}]
+		}
+		fakeEvents.setSidekick = function(id){
+			this.fakeEvent.sidekicks[0].id = "sidekick:" + id;
+		}
+		for (var i = 0; i < realEvents.rows.length; i++) {
+			fakeEvents.rows.push(realEvents.rows[i]);
+		}
+		fakeEvents.rows.push(fakeEvents.fakeEvent);
+		models[index] = fakeEvents;
+	}
+	models[index].setSidekick(id);
+	GC.app.client.runFunction("sidekickEventGacha", {eventID : "the_hack_event"}).then(function(){
+		var items = GC.app.client.stateAPI.getNewItems();
+		if(items && items.length > 0 && items[0].name == "sidekick:" + id){console.log("You got it");}
+		else {console.log("Error?");}
+	});
+}
+```
+
+And then call it with the id of the sidekick you want.
+For example to get *Nuno* (id *WC23*) I run the code
+```javascript
+getSidekickById("WC23");
+```
+
+You can find the full sidekick ID list in [SidekickCodes.md](SidekickCodes.md)
+
+
 ### Get Energy
 
 First apply this function
