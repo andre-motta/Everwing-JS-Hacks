@@ -16,6 +16,7 @@
  - **FC14** : Stoke, Forge, Bellows
  - **FC22** : Heros, Havanna, Hartumas
  - **FC23** : Kiin, Kigi, Kiwig
+ - **FC38** : Zio, Zoca, Ziocatel
  - **LC00** : Bauble, Lumen, Emprer
  - **LC01** : Glowbean, Gloria, Glorious Rex
  - **LC03** : Furlix, Furline, Furleone
@@ -27,6 +28,7 @@
  - **LC11** : Sparx, Sparkene, Sparzelle
  - **LC22** : Rumi, Roma, Rochelais
  - **LC23** : Sar, Anga, Sarangay
+ - **LC38** : Ton, Tohnna, Tohnati
  - **NC00** : Moss, Shrubb, Forrest
  - **NC01** : Flo, Flora, Florastyx
  - **NC02** : Skout, Sage, Tuskan
@@ -40,6 +42,7 @@
  - **NC11** : Eve, Levee, Leavesley
  - **NC22** : Casp, Castillan, Conthargos
  - **NC23** : Pong, Lampi, Lampong
+ - **NC38** : Soch, Sopill, Sochipilly
  - **PC00** : Pris, Prima, Prismaticus
  - **PC22** : Pharis, Pharion, Pharocius
  - **SC00** : Moonbite, Moonchomp, Mooneater
@@ -56,6 +59,7 @@
  - **SC12** : Fetora, Miasmus, Mephititus
  - **SC22** : Halla, Heliodor, Diablesse
  - **SC23** : Ban, Bakun, Bakunawa
+ - **SC38** : Mici, Misti, Micticas
  - **WC00** : Squirt, Phinn, Sailmander
  - **WC01** : Nym, Ondas, Poseidyn
  - **WC02** : Unagli, Leviathan, Tempestius
@@ -69,3 +73,4 @@
  - **WC15** : Dew, Dilius, Deliquess
  - **WC22** : Balou, Balouja, Baloubet
  - **WC23** : Nuno, Buaya, Buwaya
+ - **WC38** : Tal, Tala, Talok
