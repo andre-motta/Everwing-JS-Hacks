@@ -7,6 +7,9 @@ We use these cheat codes as an example of how a supposed well crafted game like 
 
 ## Apply the hacks
 To apply the hacks you have to open the developer console of your browser.
+
+Detailed guide with photos [here](docs/guide.md).
+
 To do that:
  - Click F12 on the everwing game page (or, right click the page and select "inspect element")
     - This will open the developer's tools on most major browsers. From here web developers tests and debug the web aplications they create. If your browser don't have dev tools, you can use firebug (https://getfirebug.com/)
