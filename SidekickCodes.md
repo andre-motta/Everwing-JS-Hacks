@@ -59,6 +59,7 @@
  - **SC12** : Fetora, Miasmus, Mephititus
  - **SC22** : Halla, Heliodor, Diablesse
  - **SC23** : Ban, Bakun, Bakunawa
+ - **SC29** : Magi, Magus, Sorceros
  - **SC38** : Mici, Misti, Micticas
  - **WC00** : Squirt, Phinn, Sailmander
  - **WC01** : Nym, Ondas, Poseidyn
