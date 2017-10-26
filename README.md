@@ -23,7 +23,7 @@ To do that:
 Now paste any of the codes bollow to hack the game.
 
 ### Unlock All Players
-
+> This does not work at the moment.
 ```javascript
 var names = ["fiona", "sophia", "coin", "magnet", "lenore", "jade", "arcana", "lyra", "trixie"];
 for (var i = 0; i < names.length; i++) {
