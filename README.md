@@ -23,12 +23,11 @@ To do that:
 Now paste any of the codes bollow to hack the game.
 
 ### Unlock All Players
-> This does not work at the moment.
 ```javascript
 var names = ["fiona", "sophia", "coin", "magnet", "lenore", "jade", "arcana", "lyra", "trixie"];
 for (var i = 0; i < names.length; i++) {
   if(GC.app.mvc.models.CharactersModel.characters[names[i]].state == "locked")
-    GC.app.client.runFunction("unlockCharacter",{characterName: names[i], isFree: true});
+    GC.app.client.runFunction("purchaseCharacter", { characterID: names[i], isFree: true });
 }
 ```
 
