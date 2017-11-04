@@ -86,6 +86,10 @@ Get a legendary sidekick
 ```javascript
 GC.app.client.runFunction("sidekickGacha", {isFree : true, gachaType : "legendary"});
 ```
+Get a mythic sidekick
+```javascript
+GC.app.client.runFunction("sidekickGacha", {isFree : true, gachaType : "mythic"});
+```
 
 Get a bossraid sidekick
 ```javascript
