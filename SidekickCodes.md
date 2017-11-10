@@ -14,6 +14,7 @@
  - **FC12** : Xiaolong, Huolong, Jinlong
  - **FC13** : Magnis, Magmus, Magnanimous
  - **FC14** : Stoke, Forge, Bellows
+ - **FC15** : Avi, Avalon, Suldal
  - **FC22** : Heros, Havanna, Hartumas
  - **FC23** : Kiin, Kigi, Kiwig
  - **FC28** : Lava, Magma, Vulcan
@@ -27,6 +28,7 @@
  - **LC09** : Estel, Estellis, Lysenthius
  - **LC10** : Kit, Swift, Vicza
  - **LC11** : Sparx, Sparkene, Sparzelle
+ - **LC12** : Loreen, Lureli, Lurelith
  - **LC22** : Rumi, Roma, Rochelais
  - **LC23** : Sar, Anga, Sarangay
  - **LC28** : Cony, Chrysos, Cornelius
@@ -42,6 +44,7 @@
  - **NC09** : Coqi, Coquira, Coqistar
  - **NC10** : Tsijari, Tanok, Itzamatul
  - **NC11** : Eve, Levee, Leavesley
+ - **NC12** : Coqi, Coquira, Coqistar
  - **NC22** : Casp, Castillan, Conthargos
  - **NC23** : Pong, Lampi, Lampong
  - **NC28** : Lumi, Lucerna, Lumina
@@ -60,9 +63,10 @@
  - **SC10** : Lethio, Lordos, Lordanos
  - **SC11** : Desmo, Desmodius, Desmodontes
  - **SC12** : Fetora, Miasmus, Mephititus
+ - **SC13** : Lethio, Lordos, Lordanos
  - **SC22** : Halla, Heliodor, Diablesse
  - **SC23** : Ban, Bakun, Bakunawa
- - **SC28** : Ven, Venum, Venumarius
+ - **SC28** : Ven, Venum, Venumnarius
  - **SC29** : Magi, Magus, Sorceros
  - **SC38** : Mici, Misti, Micticas
  - **WC00** : Squirt, Phinn, Sailmander
@@ -73,6 +77,7 @@
  - **WC06** : Blizzle, Glayche, Xero
  - **WC08** : Yaen, Yave, Yavethior
  - **WC11** : Jina, Jamailla, Jemtwyst
+ - **WC12** : Kalla, Kalena, Kalleesa
  - **WC13** : Corra, Corrado, Corradinius
  - **WC14** : Ursus, Urseus, Urselius
  - **WC15** : Dew, Dilius, Deliquess
@@ -80,3 +85,29 @@
  - **WC23** : Nuno, Buaya, Buwaya
  - **WC28** : Icee, Fria, Frigidus
  - **WC38** : Tal, Tala, Talok
+
+---
+### For hackers... if you know that this is
+
+```javascript
+// Change this code
+var sidekicks = {
+	...
+	"cha" : {
+		names : {
+			tier0 : "Charmander",
+			tier1 : "Charmeleon",
+			tier2 : "Charizard"
+		}
+	},
+	...
+};
+
+// This will print them nice
+var sidekickcodes_md = "", names;
+for(var i in sidekicks){
+	names = sidekicks[i].names;
+	sidekickcodes_md += " - **" + i + "** : " + names.tier0 + ", " + names.tier1 + ", " + names.tier2 + "\n";
+}
+console.log(sidekickcodes_md);
+```
